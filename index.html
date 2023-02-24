@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GeekMan</title>
     <!-- Bootstrap File -->
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
+<body class="p-3">
     <header class="bg-primary-subtle ">
         <div class="text-center p-4">
             <h1 class="text-primary ">GeekMAN</h1>
@@ -31,7 +31,7 @@
     <main>
         <div class="row">
             <!-- left column -->
-            <div class="col-3 p-3 border ">
+            <div class="col-3 pt-3">
                 <div class="accordion p-3 bg-success-subtle" id="accordionExample">
 
                     <div class="accordion-item">
@@ -46,9 +46,9 @@
                             <div class="accordion-body">
                                 <ul class="list-style">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
                                         <label class="form-check-label" for="flexCheckDefault">
-                                            Single Name
+                                            Single Query
                                         </label>
                                     </div>
                                     <div class="form-check">
@@ -67,7 +67,7 @@
                             <button class="accordion-button bg-primary-subtle collapsed" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                 aria-controls="collapseTwo">
-                                Target BD
+                                Target DB
                             </button>
                         </h2>
                         <div id="collapseTwo" class="bg-warning-subtle accordion-collapse collapse"
@@ -75,21 +75,27 @@
                             <div class="accordion-body">
                                 <ul class="list-style">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
                                         <label class="form-check-label" for="flexCheckDefault">
-                                            Single Name
+                                            RaidForums
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label" for="flexCheckDefault">
-                                            Batch Mode
+                                            OffensiveCommunity
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label" for="flexCheckDefault">
-                                            Batch Mode
+                                            GitHub
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            All
                                         </label>
                                     </div>
                                 </ul>
@@ -110,21 +116,21 @@
                             <div class="accordion-body">
                                 <ul class="list-style">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
                                         <label class="form-check-label" for="flexCheckDefault">
-                                            Batch Mode
+                                            GeekMAN
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label" for="flexCheckDefault">
-                                            Batch Mode
+                                            Exact String Matching
                                         </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label" for="flexCheckDefault">
-                                            Batch Mode
+                                            Levenshtein Scoring
                                         </label>
                                     </div>
                                 </ul>
@@ -172,20 +178,20 @@
             <!-- left column ends here -->
 
             <!-- right column -->
-            <div class="col-9 p-3 border ">
+            <div class="col-9 pt-3">
                 <div class="d-flex flex-column bg-success-subtle p-4 justify-content-center align-items-center">
-                    <h3 class="text-muted">Enter Username: </h3>
+                    <h3 class="text-muted p-2">Enter Your Username </h3>
 
-                    <input class=" p-3 input-field" type="text" name="" id="" placeholder="Type your username">
+                    <input class=" p-3 input-field" type="text" name="" id="" placeholder="Type your username" value="41phw01f">
 
                     <button type="button" class="mt-3 p-2 bg-warning btn-search">Search</button>
                 </div>
                 <!-- table -->
                 
                 <div class="p-4 mt-3 bg-success text-white">
-                    <h4 class="text-center ">Top matches from Raid Forums</h4>
+                    <h4 class="text-center ">Top 3 matches/target database</h4>
                     <div id="toolbar" class="select">
-                        <select class="form-control">
+                        <select class="form-control bg-export">
                             <option value="">Export Basic</option>
                             <option value="all">Export All</option>
                             <option value="selected">Export Selected</option>
@@ -195,23 +201,23 @@
                     <table id="table" data-show-export="true" data-pagination="true" data-side-pagination="server"
                         data-click-to-select="true" data-toolbar="#toolbar" data-show-toggle="true"
                         data-show-columns="true">
-                        <tbody class="text-white">
+                        <tbody class="text-white text-center">
 
                             <tr>
                                 <td>alphawolfff</td>
-                                <td>Philosophie</td>
+                                <td>RaidForums</td>
                                 <td>78.3%</td>
 
                             </tr>
                             <tr>
                                 <td>wolfywolf</td>
-                                <td>Philosophie</td>
+                                <td>RaidForums</td>
                                 <td>71.1%</td>
 
                             </tr>
                             <tr>
                                 <td>alphago</td>
-                                <td>Philosophie</td>
+                                <td>RaidForums</td>
                                 <td>65.9%</td>
                             </tr>
                         </tbody>

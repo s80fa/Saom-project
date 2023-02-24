@@ -22,3 +22,8 @@
 #toolbar {
   margin: 0;
 }
+
+.bg-export{
+    background-color: #6c757d;
+    color: white;
+}
